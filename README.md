@@ -36,12 +36,19 @@ Open a web browser and navigate to http://localhost:3000.
 
 **Application Structure**
 index.html: A simple HTML file that contains a form for user input (city name and temperature unit).
+
 app.js: The main application file that sets up an Express.js server and handles user requests.
+
 [Additional files or modules]: Any other necessary files or modules for your application's functionality.
+
+
 **Usage**
 Enter the desired city name and temperature unit (either Celsius or Fahrenheit).
+
 Click the "Go!" button.
+
 The application will display the current weather temperature and description for the specified city.
+
 **API Integration**
 The application makes an HTTPS request to the OpenWeatherMap API to retrieve weather data. You'll need to replace the placeholder API key with your own obtained from OpenWeatherMap.
 
