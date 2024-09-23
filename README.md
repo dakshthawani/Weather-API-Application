@@ -1,43 +1,52 @@
-# QR Code Generator
+## Weather API Application
 
-## Description
-This is a simple QR code generator project that allows users to input a URL and generates a QR code image. The project uses Node.js, Inquirer, and QR-Image libraries to create the QR code.
+This user-friendly web application provides real-time weather information for any city you specify.
 
-## Getting Started
+### Getting Started
 
-### Prerequisites
-- Node.js installed on your system
-- Inquirer and QR-Image libraries installed (run `npm install inquirer qr-image` in your terminal)
+**Prerequisites:**
 
-### Running the Project
-1. Clone the repository or download the code.
-2. Navigate to the project directory in your terminal.
-3. Run the command `node qr_generator.js` to start the project.
-4. Follow the prompts to enter a URL.
-5. The QR code image will be generated and saved as `qr_image.png` in the same directory.
+* Node.js installed on your machine.
+* Express.js framework.
+* Body-parser middleware.
+* HTTPS module.
+* An OpenWeatherMap API key (replace `5002d61070297170c81370a336f5ea068` with your own).
 
-## Usage
+**Running the Application:**
 
-### Generating a QR Code
-1. Run the project using `node qr_generator.js`.
-2. Enter a URL when prompted.
-3. The QR code image will be generated and saved as `qr_image.png`.
+1. **Clone the Repository:**
+   ```bash
+   git clone [invalid URL removed]
+Replace your-username with your actual GitHub username.
 
-### Customizing the QR Code
-Currently, the QR code image is generated with default settings. You can customize the QR code by modifying the `qr.image()` function in the `qr_generator.js` file.
+2. **Install Dependencies:**
 
-## License
-This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for details.
+```bash
+npm install
+```
 
-## Contributing
-Contributions are welcome! If you'd like to contribute to this project, please fork the repository, make your changes, and submit a pull request.
+3. **Start the Server:**
 
-## Contact
-If you have any questions or need support, please contact Daksh Thawani(me) at dakshthawani70@gmail.com.
+```bash
+node app.js
+```
 
-## Acknowledgments
-This project uses the following libraries:
-- **Inquirer**: for interactive command-line prompts
-- **QR-Image**: for generating QR code images
+4. **Access the Application:**
+Open a web browser and navigate to http://localhost:3000.
 
-Thanks to the maintainers of these libraries for their hard work!
+**Application Structure**
+index.html: A simple HTML file that contains a form for user input (city name and temperature unit).
+app.js: The main application file that sets up an Express.js server and handles user requests.
+[Additional files or modules]: Any other necessary files or modules for your application's functionality.
+**Usage**
+Enter the desired city name and temperature unit (either Celsius or Fahrenheit).
+Click the "Go!" button.
+The application will display the current weather temperature and description for the specified city.
+**API Integration**
+The application makes an HTTPS request to the OpenWeatherMap API to retrieve weather data. You'll need to replace the placeholder API key with your own obtained from OpenWeatherMap.
+
+**Contributing**
+We welcome contributions to improve this project! If you have any ideas or enhancements, feel free to fork the repository and submit a pull request.
+
+**License**
+This project is licensed under the MIT License. See the LICENSE file for details regarding the terms and conditions of use. 
